@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Made</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="checkout">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">✨ Hand Made</div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" data-i18n="navbar.home">الرئيسية</a></li>
+                <li><a href="products.html" data-i18n="navbar.products">المنتجات</a></li>
+                <li><a href="about.html" data-i18n="navbar.about">عن الشركة</a></li>
+                <li><a href="contact.html" data-i18n="navbar.contact">تواصل معنا</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="language-toggle" id="language-toggle">EN</button>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title" data-i18n="checkout.title">إتمام الشراء</h1>
+                
+                <form class="checkout-form" id="checkout-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 data-i18n="checkout.personalInfo">بيانات شخصية</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName" data-i18n="checkout.firstName">الاسم الأول</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName" data-i18n="checkout.lastName">الاسم الأخير</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="checkout.email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" data-i18n="checkout.phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" placeholder="920000000" required>
+                            <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                        </div>
+                    </div>
+
+                    <!-- Shipping Information -->
+                    <div class="form-section">
+                        <h3 data-i18n="checkout.shippingInfo">عنوان الشحن</h3>
+                        
+                        <div class="form-group">
+                            <label for="address" data-i18n="checkout.address">العنوان</label>
+                            <input type="text" id="address" name="address" required>
+                            <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city" data-i18n="checkout.city">المدينة</label>
+                                <input type="text" id="city" name="city" required>
+                                <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="zipCode" data-i18n="checkout.zipCode">الرمز البريدي</label>
+                                <input type="text" id="zipCode" name="zipCode" required>
+                                <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Information -->
+                    <div class="form-section">
+                        <h3 data-i18n="checkout.paymentInfo">بيانات الدفع</h3>
+                        
+                        <div class="form-group">
+                            <label for="cardNumber" data-i18n="checkout.cardNumber">رقم البطاقة</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+                            <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiryDate" data-i18n="checkout.expiryDate">تاريخ الانتهاء</label>
+                                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                                <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv" data-i18n="checkout.cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                <span class="form-error" data-i18n="checkout.required">هذا الحقل مطلوب</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 2rem;" data-i18n="checkout.placeOrder">تأكيد الطلب</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hand Made</h3>
+                <p>متجر متخصص في المنتجات اليدوية الفريدة</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.products">المنتجات</h3>
+                <ul>
+                    <li><a href="products.html">كل المنتجات</a></li>
+                    <li><a href="products.html">الأكثر مبيعًا</a></li>
+                    <li><a href="products.html">المنتجات الجديدة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.contact">تواصل معنا</h3>
+                <ul>
+                    <li>📧 info@handmade.com</li>
+                    <li>📱 +20 10 1234 5678</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="common.copyright">© 2026 Hand Made. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

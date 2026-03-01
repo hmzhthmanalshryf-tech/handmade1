@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Made</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="about">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">✨ Hand Made</div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" data-i18n="navbar.home">الرئيسية</a></li>
+                <li><a href="products.html" data-i18n="navbar.products">المنتجات</a></li>
+                <li><a href="about.html" data-i18n="navbar.about">عن الشركة</a></li>
+                <li><a href="contact.html" data-i18n="navbar.contact">تواصل معنا</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="language-toggle" id="language-toggle">EN</button>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" style="min-height: 300px;">
+            <div class="hero-content">
+                <h1 data-i18n="about.title">عن الشركة</h1>
+                <p data-i18n="about.story_text">نحن نؤمن بقوة المنتجات المصنوعة يدويًا والفريدة</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                    <div>
+                        <h2 class="section-title" style="text-align: right; margin-bottom: 2rem;" data-i18n="about.story">قصتنا</h2>
+                        <p style="margin-bottom: 1rem;" data-i18n="about.story_text">نحن نؤمن بقوة المنتجات المصنوعة يدويًا والفريدة. كل منتج يُصنع بعناية فائقة وحب لتقديم أفضل جودة</p>
+                        <p style="margin-bottom: 1rem;">بدأنا هذه الرحلة برؤية بسيطة: توفير منتجات تعكس الإبداع والفن الحقيقي. نحن نعمل بجد لضمان أن كل منتج يحمل جزءًا من روحنا وشغفنا.</p>
+                        <p>اليوم، نفخر بخدمة آلاف العملاء الراضين حول العالم الذين يثقون في جودة وأصالة منتجاتنا.</p>
+                    </div>
+                    <div style="background: linear-gradient(135deg, var(--secondary-color) 0%, var(--light-color) 100%); 
+                                border-radius: 12px; padding: 3rem; text-align: center;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">👩‍🎨</div>
+                        <h3 style="margin-bottom: 1rem;">صنع بحب</h3>
+                        <p>كل منتج مصنوع بأيدي ماهرة وقلب صادق</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="section" style="background: var(--light-color);">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.about_short">من نحن</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <!-- Mission -->
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+                        <h3 data-i18n="about.mission">مهمتنا</h3>
+                        <p style="margin-top: 1rem;" data-i18n="about.mission_text">مهمتنا هي توفير منتجات يدوية عالية الجودة تعكس الإبداع والفن الحقيقي</p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md);">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🌟</div>
+                        <h3 data-i18n="about.vision">رؤيتنا</h3>
+                        <p style="margin-top: 1rem;" data-i18n="about.vision_text">نسعى لأن نكون الخيار الأول للمنتجات اليدوية الفريدة والأنيقة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">لماذا تختار Hand Made؟</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">✨</div>
+                        <h3>جودة عالية</h3>
+                        <p>منتجات مصنوعة من أفضل المواد بعناية فائقة</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎨</div>
+                        <h3>تصاميم فريدة</h3>
+                        <p>كل منتج له طابعه الخاص وتصميمه المميز</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">💚</div>
+                        <h3>مصنوع بحب</h3>
+                        <p>كل منتج يحمل جزءًا من شغفنا وحبنا</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚚</div>
+                        <h3>شحن سريع</h3>
+                        <p>توصيل سريع وآمن لجميع أنحاء مصر</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">💬</div>
+                        <h3>دعم العملاء</h3>
+                        <p>فريق دعم متجاوب وودود لخدمتك</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔒</div>
+                        <h3>تسوق آمن</h3>
+                        <p>عمليات دفع آمنة وموثوقة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="section" style="background: var(--light-color);">
+            <div class="container">
+                <h2 class="section-title">فريقنا</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; text-align: center; box-shadow: var(--shadow-md);">
+                        <div style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); 
+                                    height: 150px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            👩‍🎨
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3>فاطمة أحمد</h3>
+                            <p style="color: var(--primary-color);">مؤسسة ومصممة</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; border-radius: 12px; overflow: hidden; text-align: center; box-shadow: var(--shadow-md);">
+                        <div style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); 
+                                    height: 150px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            👨‍💼
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3>محمد علي</h3>
+                            <p style="color: var(--primary-color);">مدير العمليات</p>
+                        </div>
+                    </div>
+
+                    <div style="background: white; border-radius: 12px; overflow: hidden; text-align: center; box-shadow: var(--shadow-md);">
+                        <div style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); 
+                                    height: 150px; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            👩‍💻
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3>سارة حسن</h3>
+                            <p style="color: var(--primary-color);">مسؤول التسويق</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="color: white; font-size: 2.5rem;">انضم إلينا في هذه الرحلة</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.125rem; margin-bottom: 2rem;">اكتشف مجموعتنا الحصرية من المنتجات اليدوية</p>
+                <button class="btn btn-secondary btn-lg" onclick="window.location.href='products.html'">استكشف المنتجات</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hand Made</h3>
+                <p>متجر متخصص في المنتجات اليدوية الفريدة</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.products">المنتجات</h3>
+                <ul>
+                    <li><a href="products.html">كل المنتجات</a></li>
+                    <li><a href="products.html">الأكثر مبيعًا</a></li>
+                    <li><a href="products.html">المنتجات الجديدة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.contact">تواصل معنا</h3>
+                <ul>
+                    <li>📧 info@handmade.com</li>
+                    <li>📱 +20 10 1234 5678</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="common.copyright">© 2026 Hand Made. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

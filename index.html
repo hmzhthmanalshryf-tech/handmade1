@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Made</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="متجر Hand Made - منتجات يدوية فريدة وأنيقة مصنوعة بحب وإتقان">
+</head>
+<body data-page="home">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">✨ Hand Made</div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" data-i18n="navbar.home">الرئيسية</a></li>
+                <li><a href="products.html" data-i18n="navbar.products">المنتجات</a></li>
+                <li><a href="about.html" data-i18n="navbar.about">عن الشركة</a></li>
+                <li><a href="contact.html" data-i18n="navbar.contact">تواصل معنا</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="language-toggle" id="language-toggle">EN</button>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-i18n="hero.title">منتجات يدوية فريدة وأنيقة</h1>
+                <p data-i18n="hero.subtitle">تسوق أفضل المنتجات المصنوعة يدويًا بحب وإتقان</p>
+                <button class="btn btn-primary btn-lg" onclick="window.location.href='products.html'" data-i18n="hero.cta">ابدأ التسوق الآن</button>
+            </div>
+        </section>
+
+        <!-- Featured Products Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.featured">منتجاتنا المميزة</h2>
+                <div class="products-grid" id="featured-products"></div>
+            </div>
+        </section>
+
+        <!-- Best Sellers Section -->
+        <section class="section" style="background: linear-gradient(180deg, rgba(232, 212, 200, 0.3) 0%, rgba(255, 255, 255, 0) 100%);">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.bestSellers">الأكثر مبيعًا</h2>
+                <div class="products-grid" id="bestsellers-products"></div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.categories">فئات المنتجات</h2>
+                <div class="products-grid" id="categories-grid"></div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="section" style="background: var(--light-color);">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.about_short">من نحن</h2>
+                <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+                    <p data-i18n="about.story_text">
+                        نحن نؤمن بقوة المنتجات المصنوعة يدويًا والفريدة. كل منتج يُصنع بعناية فائقة وحب لتقديم أفضل جودة
+                    </p>
+                    <button class="btn btn-primary" onclick="window.location.href='about.html'" data-i18n="navbar.about">اقرأ المزيد</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="home.reviews">آراء عملائنا</h2>
+                <div class="products-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <p style="font-style: italic; margin-bottom: 1rem;">❤️ منتجات جميلة جداً وعملية، سعر مناسب وجودة عالية</p>
+                        <strong>فاطمة م.</strong>
+                        <div style="color: #FFD700;">★★★★★</div>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <p style="font-style: italic; margin-bottom: 1rem;">👌 تجربة تسوق ممتازة وخدمة عملاء رائعة</p>
+                        <strong>محمد ع.</strong>
+                        <div style="color: #FFD700;">★★★★★</div>
+                    </div>
+                    <div style="background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center;">
+                        <p style="font-style: italic; margin-bottom: 1rem;">🎁 أفضل هدايا وأسعار تنافسية جداً</p>
+                        <strong>سارة س.</strong>
+                        <div style="color: #FFD700;">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="color: white; font-size: 2.5rem;">استمتع بتجربة تسوق فريدة</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.125rem; margin-bottom: 2rem;">اكتشف مجموعتنا الحصرية من المنتجات اليدوية المصنوعة بحب</p>
+                <button class="btn btn-secondary btn-lg" onclick="window.location.href='products.html'" data-i18n="hero.cta">ابدأ التسوق الآن</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hand Made</h3>
+                <p style="margin-bottom: 1rem;">متجر متخصص في المنتجات اليدوية الفريدة والأنيقة</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.products">المنتجات</h3>
+                <ul>
+                    <li><a href="products.html">كل المنتجات</a></li>
+                    <li><a href="products.html?category=candles">شموع معطرة</a></li>
+                    <li><a href="products.html?category=accessories">إكسسوارات</a></li>
+                    <li><a href="products.html?category=wooden">لوحات خشبية</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.contact">تواصل معنا</h3>
+                <ul>
+                    <li><a href="contact.html" data-i18n="contact.form">نموذج التواصل</a></li>
+                    <li>📧 info@handmade.com</li>
+                    <li>📱 +20 10 1234 5678</li>
+                    <li>📍 القاهرة، مصر</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>روابط مهمة</h3>
+                <ul>
+                    <li><a href="about.html" data-i18n="navbar.about">عن الشركة</a></li>
+                    <li><a href="cart.html" data-i18n="cart.title">السلة</a></li>
+                    <li><a href="#" data-action="toggle-language">تبديل اللغة</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="common.copyright">© 2026 Hand Made. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

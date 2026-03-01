@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Made</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">✨ Hand Made</div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" data-i18n="navbar.home">الرئيسية</a></li>
+                <li><a href="products.html" data-i18n="navbar.products">المنتجات</a></li>
+                <li><a href="about.html" data-i18n="navbar.about">عن الشركة</a></li>
+                <li><a href="contact.html" data-i18n="navbar.contact">تواصل معنا</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="language-toggle" id="language-toggle">EN</button>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" style="min-height: 300px;">
+            <div class="hero-content">
+                <h1 data-i18n="contact.title">تواصل معنا</h1>
+                <p>نحن هنا لمساعدتك ونحب أن نسمع منك</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="section-title" style="text-align: right;" data-i18n="contact.form">نموذج التواصل</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.name">الاسم</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" data-i18n="checkout.email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact.phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" data-i18n="contact.message">الرسالة</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" data-i18n="contact.send">إرسال</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 class="section-title" style="text-align: right;" data-i18n="contact.info">معلومات التواصل</h2>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="font-size: 2rem;">📧</div>
+                                <div>
+                                    <h3 style="margin-bottom: 0.5rem;">البريد الإلكتروني</h3>
+                                    <p><a href="mailto:info@handmade.com">info@handmade.com</a></p>
+                                    <p><a href="mailto:support@handmade.com">support@handmade.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="font-size: 2rem;">📱</div>
+                                <div>
+                                    <h3 style="margin-bottom: 0.5rem;">الهاتف</h3>
+                                    <p><a href="tel:+201012345678">+20 10 1234 5678</a></p>
+                                    <p><a href="tel:+966501234568">+966 50 123 4568</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="font-size: 2rem;">📍</div>
+                                <div>
+                                    <h3 style="margin-bottom: 0.5rem;">العنوان</h3>
+                                    <p>القاهرة، جمهورية مصر العربية</p>
+                                    <p>شارع الملك فهد، حي العليا</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 2rem;">
+                            <div style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                                <div style="font-size: 2rem;">🕐</div>
+                                <div>
+                                    <h3 style="margin-bottom: 0.5rem;">ساعات العمل</h3>
+                                    <p>السبت - الخميس: 10:00 - 22:00</p>
+                                    <p>الجمعة: 14:00 - 23:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="section" style="background: var(--light-color);">
+            <div class="container">
+                <h2 class="section-title">موقعنا على الخريطة</h2>
+                <div style="width: 100%; height: 400px; background: linear-gradient(135deg, var(--secondary-color) 0%, var(--light-color) 100%); 
+                            border-radius: 12px; display: flex; align-items: center; justify-content: center;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+                        <p style="font-size: 1.125rem; color: var(--text-color);">القاهرة، جمهورية مصر العربية</p>
+                        <p style="color: #999;">خريطة توضيحية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div style="background: var(--light-color); padding: 1.5rem; border-radius: 12px;">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">كم مدة الشحن؟</h3>
+                        <p>الشحن داخل القاهرة يستغرق 1-3 أيام، وخارجها 3-5 أيام عمل</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 1.5rem; border-radius: 12px;">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">هل توجد ضمانات؟</h3>
+                        <p>نوفر ضمان جودة 30 يوم لجميع المنتجات</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 1.5rem; border-radius: 12px;">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">هل تقبلون الاسترجاع؟</h3>
+                        <p>نعم، يمكن استرجاع المنتجات خلال 14 يوم</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 1.5rem; border-radius: 12px;">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">ماذا عن الدفع؟</h3>
+                        <p>نقبل البطاقات الائتمانية والتحويل البنكي والدفع عند الاستقبال</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 1.5rem; border-radius: 12px;">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">هل يوجد توصيل مجاني؟</h3>
+                        <p>التوصيل مجاني للطلبات فوق 200 ريال</p>
+                    </div>
+                    <div style="background: var(--light-color); padding: 1.5rem; border-radius: 12px;">
+                        <h3 style="margin-bottom: 0.5rem; color: var(--primary-color);">كيف أحصل على خصومات؟</h3>
+                        <p>اشترك في نشرتنا الإخبارية واحصل على خصم 10%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="color: white; font-size: 2.5rem;">هل لديك أسئلة أخرى؟</h2>
+                <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.125rem; margin-bottom: 2rem;">فريقنا مستعد دائماً للمساعدة</p>
+                <button class="btn btn-secondary btn-lg">تواصل معنا</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hand Made</h3>
+                <p>متجر متخصص في المنتجات اليدوية الفريدة</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.products">المنتجات</h3>
+                <ul>
+                    <li><a href="products.html">كل المنتجات</a></li>
+                    <li><a href="products.html">الأكثر مبيعًا</a></li>
+                    <li><a href="products.html">المنتجات الجديدة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.contact">تواصل معنا</h3>
+                <ul>
+                    <li>📧 info@handmade.com</li>
+                    <li>📱 +966 50 123 4567</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="common.copyright">© 2026 Hand Made. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <script src="js/lang.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

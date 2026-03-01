@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Made</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="products">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">✨ Hand Made</div>
+            <ul class="navbar-menu">
+                <li><a href="index.html" data-i18n="navbar.home">الرئيسية</a></li>
+                <li><a href="products.html" data-i18n="navbar.products">المنتجات</a></li>
+                <li><a href="about.html" data-i18n="navbar.about">عن الشركة</a></li>
+                <li><a href="contact.html" data-i18n="navbar.contact">تواصل معنا</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="language-toggle" id="language-toggle">EN</button>
+                <div class="cart-icon" onclick="window.location.href='cart.html'">
+                    🛒
+                    <span class="cart-badge">0</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title" data-i18n="products.title">المنتجات</h1>
+                
+                <div style="display: grid; grid-template-columns: 250px 1fr; gap: 2rem; margin-top: 2rem;">
+                    <!-- Sidebar Filters -->
+                    <aside>
+                        <div class="filters">
+                            <h3 data-i18n="products.filter">الفلاتر</h3>
+                            
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-i18n="products.search">ابحث عن منتج</h4>
+                                <input type="text" id="search-box" class="search-box" placeholder="ابحث...">
+                            </div>
+
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-i18n="products.category">الفئة</h4>
+                                <div class="filter-options">
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-all" name="category" value="">
+                                        <label for="cat-all" data-i18n="products.allCategories">جميع الفئات</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-candles" name="category" value="candles">
+                                        <label for="cat-candles" data-i18n="categories.candles">شموع معطرة</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-accessories" name="category" value="accessories">
+                                        <label for="cat-accessories" data-i18n="categories.accessories">إكسسوارات</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-wooden" name="category" value="wooden">
+                                        <label for="cat-wooden" data-i18n="categories.wooden">لوحات خشبية</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-mugs" name="category" value="mugs">
+                                        <label for="cat-mugs" data-i18n="categories.mugs">أكواب مطبوعة</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-tshirts" name="category" value="tshirts">
+                                        <label for="cat-tshirts" data-i18n="categories.tshirts">تيشيرتات DTF</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-chains" name="category" value="chains">
+                                        <label for="cat-chains" data-i18n="categories.chains">سلاسل يدوية</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="cat-bags" name="category" value="bags">
+                                        <label for="cat-bags" data-i18n="categories.bags">حقائب قماش</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-group">
+                                <h4 class="filter-title" data-i18n="products.price">السعر</h4>
+                                <div class="filter-options">
+                                    <div class="filter-option">
+                                        <input type="radio" id="price-all" name="price" value="">
+                                        <label for="price-all">الكل</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="price-0-50" name="price" value="0-50">
+                                        <label for="price-0-50">0 - 50 ج.م</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="price-50-100" name="price" value="50-100">
+                                        <label for="price-50-100">50 - 100 ج.م</label>
+                                    </div>
+                                    <div class="filter-option">
+                                        <input type="radio" id="price-100-above" name="price" value="100-9999">
+                                        <label for="price-100-above">أكثر من 100 ج.م</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <!-- Products Grid -->
+                    <div>
+                        <div class="products-grid" id="products-grid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hand Made</h3>
+                <p>متجر متخصص في المنتجات اليدوية الفريدة</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.products">المنتجات</h3>
+                <ul>
+                    <li><a href="products.html">كل المنتجات</a></li>
+                    <li><a href="products.html">الأكثر مبيعًا</a></li>
+                    <li><a href="products.html">المنتجات الجديدة</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="navbar.contact">تواصل معنا</h3>
+                <ul>
+                    <li>📧 info@handmade.com</li>
+                    <li>📱 +966 50 123 4567</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="common.copyright">© 2026 Hand Made. جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+  <script src="lang.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>    <script>
+        // Setup category filter from URL
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            if (category) {
+                const radio = document.querySelector(`input[value="${category}"]`);
+                if (radio) {
+                    radio.checked = true;
+                    const event = new Event('change');
+                    radio.dispatchEvent(event);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
